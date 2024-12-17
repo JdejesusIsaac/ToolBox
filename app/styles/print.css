@@ -1,0 +1,36 @@
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  #analysis-content,
+  #analysis-content * {
+    visibility: visible;
+  }
+
+  #analysis-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none;
+  }
+} 
